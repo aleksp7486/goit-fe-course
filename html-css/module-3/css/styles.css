@@ -1,0 +1,157 @@
+html {
+    box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: 
+    'Playfair Display', serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* main-nav */
+
+.site-header {
+    text-align: center;
+    padding-top: 72px;
+    padding-bottom: 68px;
+}
+
+.nav-list {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    color: #626262;
+    text-transform: uppercase;
+    text-decoration: none;
+} 
+
+.nav-item a:hover,
+.nav-item a:focus {
+    color: #03a9f4
+}    
+
+.nav-item:nth-last-child(n+2) {
+margin-right: 65px;
+}
+
+/* main-section */
+.art-section {
+    padding-bottom: 70px;
+}
+.main-list {
+    padding: 0;
+    font-size: 0;
+    margin-bottom: 52px;
+}
+
+.list-item {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    margin-bottom: 130px;
+}
+
+.list-item:nth-last-child(2n+1) {
+    margin-right: 0;
+}
+
+.list-item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.foto {
+    margin-bottom: 30px;
+}
+.ocupation {
+    font-family: 'Ubuntu', sans-serif;
+    color: #b4ad9e;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+}
+ 
+.table {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 36px;
+
+}
+
+.content {
+     font-size: 14px;
+     margin: 0;
+}
+
+
+
+.load-button {
+     
+     padding: 18px 34px;
+     margin: 0 auto; 
+     border-width: 1px;
+     border-color: #626262;
+     background-color: transparent;
+     min-width: 164px;
+     min-height: 60px;
+     font-size: 20px;
+     line-height: 24px;
+     text-align: center;
+     display: block;
+}
+
+
+
+
+ 
+
+
+
