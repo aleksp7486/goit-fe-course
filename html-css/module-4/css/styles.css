@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 38px;
+}
+
+
+/* Page-header */
+
+.page-header {
+margin-bottom: 104px;
+}
+
+.page-navigation {
+    width: 491px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    margin-top: 11px;
+}
+
+.navigation-list {
+    float: left;
+}
+
+.navigation-list:not(:last-child) {
+    margin-right: 35px;
+}
+
+.page-logo {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    color: #555252;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: left;
+}
+
+.page-logo::first-letter {
+    font-weight: 900;
+    color: #1abc9c;
+}
+
+.page-logo:hover,
+.page-logo:focus {
+    color: #1abc9c;
+}
+
+.page-navigation a {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 0.786;
+    font-weight: 700;
+    color: #0f0101; 
+}
+
+.page-navigation a:hover,
+.page-navigation a:focus {
+    color: #1abc9c;
+}
+
