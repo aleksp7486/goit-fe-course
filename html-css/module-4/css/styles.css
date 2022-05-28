@@ -136,7 +136,6 @@ h2::after {
 
 .gallery-list {
   list-style: none;
-  display: inline-block;
 }
 
 .gallery-list-item {
@@ -182,6 +181,7 @@ h2::after {
   vertical-align: middle;
   object-fit: cover;
   max-height: 250px;
+  
 }
 
 .ocupation {
