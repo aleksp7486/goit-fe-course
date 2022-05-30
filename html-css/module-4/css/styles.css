@@ -58,7 +58,7 @@ img {
   width: 491px;
   list-style: none;
   float: right;
-  margin-top: 11px;
+  padding-top: 11px;
 }
 
 .navigation-list {
@@ -176,13 +176,12 @@ h2::after {
   background-color: #e9f0fd;
 }
 
-.product_img {
+
+
+.product_img { 
   display: inline-block;
   vertical-align: middle;
-  object-fit: cover;
-  max-height: 250px;
-  
-}
+} 
 
 .ocupation {
   background-color: #323232;
