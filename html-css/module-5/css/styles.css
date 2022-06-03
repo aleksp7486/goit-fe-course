@@ -286,7 +286,7 @@ text-align: center;
 /* hover */
 
 .hover-item {
-  display: block;
+  display: none;
   position: absolute;
   left: 0;
   border: 10px solid rgba(255, 255, 255, 0.549);
@@ -305,22 +305,27 @@ text-align: center;
   min-height: 50px;
   background-color: transparent;
   color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
 
 .like {
   left: 38px;
+  background-image: url(../img/icon/like.png);
 }
 
 .shuffle {
   left: 50%;
   transform: translatex(-50%);
+  background-image: url(../img/icon/shuffle.png);
 
 
 }
 
 .clock {
   right: 38px;
+  background-image: url(../img/icon/clock.png);
 }
 
 .cart {
@@ -328,15 +333,18 @@ text-align: center;
   top: 144px;
   left: 38px;
   background-color: #323232;
+  background-image: url(../img/icon/cart.png);
+  background-position: 7px;
 }
 
-.cart-span {
+.cart {
   font-family: var(--ff-o);
   font-size: 14px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 14px;
-  text-align: center;
+  text-align: right;
+  padding-right: 14px;
 
 }
 
@@ -351,14 +359,6 @@ text-align: center;
 .hover-button:hover {
   background-color: #1abc9c;
 }
-
-
-
-
-
-
-
-
 
 /* Footer */
 
