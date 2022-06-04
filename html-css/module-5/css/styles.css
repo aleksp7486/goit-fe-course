@@ -286,7 +286,7 @@ text-align: center;
 /* hover */
 
 .hover-item {
-  display: none;
+  opacity: 0;
   position: absolute;
   left: 0;
   border: 10px solid rgba(255, 255, 255, 0.549);
@@ -353,7 +353,7 @@ text-align: center;
 }
 
 .collection-list-item:hover .hover-item {
-  display: block;
+  opacity: 1;
 } 
 
 .hover-button:hover {
