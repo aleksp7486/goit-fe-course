@@ -53,14 +53,13 @@ html {
 }
 
 body {
-  font-family: var(--ff-r)
+  font-family: var(--ff-r);
 }
 
 /* Header */
 
 .page-header {
-  margin-bottom: 32px;
-  padding-top: 36px
+  padding: 36px 0 32px;
 }
 
 .page-logo {
@@ -76,13 +75,13 @@ body {
 }
 
 .page-logo::first-letter {
-  color: #1ab9cc;
+  color: #1abc9c;
   font-weight: 900;
 }
 
 .page-logo:hover,
 .page-logo:focus {
-  color: #1ab9cc;
+  color: #1abc9c;
 }
 
 .page-menu {
@@ -117,7 +116,7 @@ body {
 
 .menu-item a:hover,
 .menu-item a:focus {
-  color: #1ab9cc;
+  color: #1abc9c;
 }
 
 /* Main */
@@ -215,7 +214,7 @@ main {
 .section-name::after {
   content: "";
   display: block;
-  background-color: rgb(26, 188, 156);
+  background-color: #1abc9c;
   width: 164px;
   height: 7px;
   margin-bottom: 32px;
@@ -226,7 +225,6 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 
 .collection-list-item {
@@ -250,17 +248,16 @@ main {
 }
 
 .product-ocupation {
- position: absolute;
+  position: absolute;
   height: 40px;
   width: 100%;
   background-color: #323232;
   left: 0;
   bottom: 0;
-  
 }
 
-.product-name, .product-price {
-  
+.product-name,
+.product-price {
   color: #ffffff;
   font-size: 18px;
   line-height: 32px;
@@ -276,11 +273,11 @@ main {
 }
 
 .product-price {
-background-color: #ffffff70;
-width: 54px;
-height: 100%;
-float: right;
-text-align: center;
+  background-color: #ffffff70;
+  width: 54px;
+  height: 100%;
+  float: right;
+  text-align: center;
 }
 
 /* hover */
@@ -290,11 +287,11 @@ text-align: center;
   position: absolute;
   left: 0;
   border: 10px solid rgba(255, 255, 255, 0.549);
-  background-color: rgba(0, 0, 0, 0.549);  
+  background-color: rgba(0, 0, 0, 0.549);
   width: 255px;
   height: 282px;
   z-index: 1;
- }
+}
 
 .hover-button {
   position: absolute;
@@ -307,7 +304,6 @@ text-align: center;
   color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .like {
@@ -319,8 +315,6 @@ text-align: center;
   left: 50%;
   transform: translatex(-50%);
   background-image: url(../img/icon/shuffle.png);
-
-
 }
 
 .clock {
@@ -345,7 +339,6 @@ text-align: center;
   line-height: 14px;
   text-align: right;
   padding-right: 14px;
-
 }
 
 .collection-list-item:hover .product-ocupation {
@@ -354,7 +347,7 @@ text-align: center;
 
 .collection-list-item:hover .hover-item {
   opacity: 1;
-} 
+}
 
 .hover-button:hover {
   background-color: #1abc9c;
@@ -381,10 +374,3 @@ footer {
   color: #46bfa9;
   text-decoration: none;
 }
-
-
-
-
-
-
-
