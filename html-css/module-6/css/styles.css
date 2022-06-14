@@ -96,17 +96,20 @@ body {
 .nav__list {
   display: flex;
   justify-content: space-between;
-  flex: 0 1 490px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .nav__item {
-  position: relative;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 55px;
 }
 
 .nav__link {
+  position: relative;
   color: #95e1d3;
   font-family: Montserrat;
   font-size: 14px;
@@ -152,17 +155,8 @@ body {
   color: #333;
 }
 
-.sup-title {
-  font-family: "Kaushan Script";
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.title {
+.title-maine {
+  position: relative;
   font-family: Montserrat;
   font-size: 30px;
   font-weight: 700;
@@ -172,7 +166,28 @@ body {
   padding: 0;
 }
 
-.title::after {
+.title-maine::before {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.title-maine__ser::before {
+  content: "We work with";
+}
+
+.title-maine__team::before {
+  content: "Who we are";
+}
+
+.title-maine::after {
   content: "";
   display: block;
   width: 60px;
@@ -384,11 +399,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 62px;
   border-top: 1px solid #e5e5e5;
 }
 
 .footer__text {
+  padding: 10px 0;
   font-family: Montserrat;
   font-size: 14px;
   color: #333;
@@ -405,7 +420,7 @@ body {
 }
 
 .footer__input {
-  padding: 0;
+  padding: 0 0 0 8px;
   width: 230px;
   height: 40px;
   background-color: #fff;
