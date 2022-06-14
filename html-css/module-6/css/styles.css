@@ -35,8 +35,11 @@ html {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   padding-top: 26px;
   width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
@@ -138,7 +141,9 @@ body {
 }
 
 /* services-section */
-
+.page-main {
+  flex-grow: 1;
+}
 .services {
   margin-bottom: 98px;
 }
