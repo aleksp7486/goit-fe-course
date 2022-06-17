@@ -1,0 +1,377 @@
+/* page-settings */
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* fonts-local */
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v24-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/montserrat-v24-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ /* Super Modern Browsers */ /* Modern Browsers */
+      url("../fonts/montserrat-v24-latin-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v24-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v24-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v24-latin-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v24-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v24-latin-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: local("☺"), url("../fonts/RobotoSlab-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Wisdom Script";
+  src: local("☺"), url("../fonts/wisdomscript.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  src: url("../fonts/droidserif-italic-webfont.woff2") format("woff2"),
+    url("../fonts/droidserif-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* ===================================================== */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: #777;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.wrapper-header {
+  padding-top: 42px;
+}
+
+.page-header {
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  display: block;
+  text-decoration: none;
+  color: #fed136;
+  font-family: "Wisdom Script";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 41px;
+  transition: transform 0.3s linear;
+}
+
+.nav__logo:hover,
+.nav__logo:focus {
+  transform: scale(1.1);
+}
+.nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav__items {
+}
+.nav__item {
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+  font-family: Montserrat;
+  line-height: 41px;
+  transition: color 0.3s linear, transform 0.3s linear;
+}
+
+.nav__item:hover,
+.nav__item:focus {
+  color: #fed136;
+  transform: scale(1.1);
+}
+
+/* Services */
+.wrapper-header {
+}
+
+.services {
+}
+
+.services__header {
+  margin-bottom: 80px;
+}
+
+.wrapper-services {
+  padding: 96px 0 120px;
+}
+.services__body {
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  color: #222;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services__title {
+  color: #222;
+}
+
+.services__title::after {
+  content: "Proin iaculis purus consequat sem cure.";
+}
+
+.section-title::after {
+  display: block;
+  color: #777;
+  font-family: "Droid Serif";
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.2;
+  margin-top: 5px;
+  text-transform: none;
+}
+
+.services__body {
+}
+.services__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.services__items {
+  flex: 0 1 290px;
+}
+
+.services__items::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-color: #fff;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.basket::before {
+  background-image: url(../img/icon/Icon-Basket.png);
+}
+.laptop::before {
+  background-image: url(../img/icon/Icon-Laptop.png);
+}
+.locked::before {
+  background-image: url(../img/icon/Icon-Locked.png);
+}
+
+.services__items:not(:nth-child(3n)) {
+  margin-right: 35px;
+}
+.services__colum-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #222;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 75px;
+  margin-bottom: -6px;
+}
+.services__text {
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact */
+.wrapper-contact {
+  padding: 106px 0 114px;
+  background-color: #222;
+  background-image: url(../img/Map_Image.png);
+  background-repeat: no-repeat;
+  background-position: bottom 20px right;
+}
+
+.contact {
+}
+.contact__header {
+  margin-bottom: 74px;
+}
+
+.contact__title {
+  color: #fff;
+}
+
+.contact__title::after {
+  content: "Proin iaculis purus consequat sem cure.";
+}
+
+.contact__body {
+}
+
+.contact__form {
+}
+
+.contact__colums {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.contact_l-colum {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.contact__form input {
+  padding: 20px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.contact__form input::placeholder {
+  color: #bbb;
+}
+
+.contact__name {
+  margin-bottom: 26px;
+}
+.contact__email {
+  margin-bottom: 26px;
+}
+
+.contact__subject {
+}
+
+.contact__message {
+  flex: 0 1 455px;
+  padding: 20px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.contact__message::placeholder {
+  color: #bbb;
+}
+
+.contact__but {
+  display: block;
+  padding: 0;
+  border: 0;
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  border-radius: 3px;
+  margin: 0 auto;
+  transition: transform 0.3s linear;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact__but:hover {
+  transform: scale(1.05);
+}
+
+.contact__form input:not(:focus)[required]:valid {
+  outline: 1px solid green;
+}
+
+.contact__form input:not(:focus)[required]:invalid {
+  outline: 1px solid red;
+}
+
+.contact__form textarea:not(:focus)[required]:valid {
+  outline: 1px solid green;
+}
+
+.contact__form textarea:not(:focus)[required]:invalid {
+  outline: 1px solid red;
+}
