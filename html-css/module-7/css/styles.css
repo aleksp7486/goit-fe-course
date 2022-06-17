@@ -239,8 +239,8 @@ body {
   background-image: url(../img/Map_Image.png);
   background-repeat: no-repeat;
   background-position: bottom 20px right;
+  background-size: 100%;
   min-width: 940px;
-  width: 100%;
 }
 
 .contact__header {
