@@ -110,8 +110,6 @@ body {
   padding-top: 42px;
 }
 
-.page-header {
-}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -138,8 +136,7 @@ body {
   padding: 0;
   list-style: none;
 }
-.nav__items {
-}
+
 .nav__item {
   display: block;
   padding: 0 20px;
@@ -158,11 +155,6 @@ body {
 }
 
 /* Services */
-.wrapper-header {
-}
-
-.services {
-}
 
 .services__header {
   margin-bottom: 80px;
@@ -170,8 +162,6 @@ body {
 
 .wrapper-services {
   padding: 96px 0 120px;
-}
-.services__body {
 }
 
 .section-title {
@@ -205,8 +195,6 @@ body {
   text-transform: none;
 }
 
-.services__body {
-}
 .services__list {
   display: flex;
   margin: 0;
@@ -266,10 +254,10 @@ body {
   background-image: url(../img/Map_Image.png);
   background-repeat: no-repeat;
   background-position: bottom 20px right;
+  min-width: 940px;
+  margin: 0 auto;
 }
 
-.contact {
-}
 .contact__header {
   margin-bottom: 74px;
 }
@@ -280,12 +268,6 @@ body {
 
 .contact__title::after {
   content: "Proin iaculis purus consequat sem cure.";
-}
-
-.contact__body {
-}
-
-.contact__form {
 }
 
 .contact__colums {
@@ -320,9 +302,6 @@ body {
 }
 .contact__email {
   margin-bottom: 26px;
-}
-
-.contact__subject {
 }
 
 .contact__message {
