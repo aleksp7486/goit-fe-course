@@ -32,42 +32,52 @@ img {
 
 /* fonts-local */
 
+/* montserrat-regular - latin */
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/montserrat-v24-latin-regular.woff2") format("woff2"),
-    url("../fonts/montserrat-v24-latin-regular.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Montserrat';
   font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/montserrat-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
+/* montserrat-700 - latin */
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/montserrat-v24-latin-700.woff2") format("woff2"),
-    url("../fonts/montserrat-v24-latin-700.woff") format("woff");
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 700;
-  font-style: normal;
+  src: local(''),
+       url('../fonts/montserrat-v24-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v24-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* roboto-slab-regular - latin */
 @font-face {
-  font-family: "Roboto Slab";
-  src: url("../fonts/RobotoSlab-Regular.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Roboto Slab';
   font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-slab-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* Droid-Serif-italic - latin */
 @font-face {
-  font-family: "Wisdom Script";
-  src: url("../fonts/wisdomscript.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Droid Serif";
-  src: url("../fonts/droidserif-italic-webfont.woff2") format("woff2"),
-    url("../fonts/droidserif-italic-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Droid Serif';
   font-style: italic;
+  font-weight: 400;
+  src: local(''),
+  url("../fonts/droidserif-italic-webfont.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/droidserif-italic-webfont.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Wisdom-Script - latin */
+@font-face {
+  font-family: 'Wisdom Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  src: url("../fonts/wisdomscript.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* ===================================================== */
@@ -92,7 +102,7 @@ body {
 /* Header */
 
 .wrapper-header {
-  padding-top: 42px;
+  padding-top: 48px;
 }
 
 .nav {
@@ -107,7 +117,6 @@ body {
   font-family: "Wisdom Script";
   font-size: 26px;
   font-weight: 400;
-  line-height: 41px;
   transition: transform 0.3s linear;
 }
 
@@ -129,7 +138,6 @@ body {
   text-transform: uppercase;
   color: #222;
   font-family: Montserrat;
-  line-height: 41px;
   transition: color 0.3s linear, transform 0.3s linear;
 }
 
@@ -142,11 +150,11 @@ body {
 /* Services */
 
 .services__header {
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .wrapper-services {
-  padding: 96px 0 120px;
+  padding: 122px 0 120px;
 }
 
 .section-title {
@@ -156,9 +164,9 @@ body {
   font-family: Montserrat;
   font-size: 40px;
   font-weight: 700;
-  line-height: 75px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 18px;
 }
 
 .services__title {
@@ -175,7 +183,6 @@ body {
   font-family: "Droid Serif";
   font-size: 16px;
   font-style: italic;
-  line-height: 1.2;
   margin-top: 5px;
   text-transform: none;
 }
@@ -201,6 +208,7 @@ body {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 26px;
 }
 
 .basket::before {
@@ -224,8 +232,7 @@ body {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 700;
-  line-height: 75px;
-  margin-bottom: -6px;
+  margin-bottom: 18px;
 }
 .services__text {
   margin: 0;
@@ -244,7 +251,7 @@ body {
 }
 
 .contact__header {
-  margin-bottom: 74px;
+  margin-bottom: 76px;
 }
 
 .contact__title {
@@ -317,6 +324,7 @@ body {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
