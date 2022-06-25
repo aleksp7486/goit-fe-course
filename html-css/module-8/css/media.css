@@ -44,7 +44,7 @@
   }
   /* Banner */
   .banner {
-    min-height: 43.75rem;
+    min-height: 700px;
     padding-top: 2.375rem;
   }
   .banner_title {
