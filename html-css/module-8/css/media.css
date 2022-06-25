@@ -1,6 +1,6 @@
 /* Smartphone */
 
-@media (max-width: 659px) {
+@media (max-width: 660px) {
   /* Banner */
   .banner_link {
     max-width: 100%;
@@ -29,7 +29,7 @@
 
 /* Tablet */
 
-@media (min-width: 660px) {
+@media (min-width: 661px) {
   .wrapper {
     max-width: 660px;
   }
@@ -73,7 +73,7 @@
   }
 }
 /* Tablet margin-bottom */
-@media (min-width: 660px) and (max-width: 939px) {
+@media (min-width: 661px) and (max-width: 940px) {
   .partners__item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 3.5rem;
   }
@@ -84,7 +84,7 @@
 
 /* Desktop */
 
-@media (min-width: 940px) {
+@media (min-width: 941px) {
   .wrapper {
     max-width: 940px;
   }
