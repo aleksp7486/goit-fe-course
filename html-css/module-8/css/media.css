@@ -6,10 +6,7 @@
     max-width: 100%;
   }
   /* Partners */
-  .partners__item {
-    max-width: 13.75rem;
-    margin: 0 auto;
-  }
+
   .partners__item:not(:last-child) {
     margin-bottom: 1.625rem;
   }
@@ -57,13 +54,7 @@
   }
   /* Partners */
   .partners__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: 1.75rem;
-  }
-  .partners__item {
-    flex: 0 1 13.75rem;
   }
   .partners__title {
     margin-bottom: 1.875rem;

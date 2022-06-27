@@ -90,6 +90,7 @@ body {
 }
 .header__logo {
   display: block;
+  padding: 0 1rem;
   color: #fff;
   font-family: var(--font-mont);
   font-size: 1.25rem;
@@ -168,10 +169,16 @@ body {
   font-weight: 700;
 }
 .partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   margin: 0;
   margin-bottom: 1.75rem;
   padding: 0;
+}
+.partners__item {
+  flex: 0 1 13.75rem;
 }
 .partners__image-wrap {
   position: relative;
