@@ -142,7 +142,9 @@ img {
   border-radius: 50%;
   margin: auto;
 }
-.partners__icon {
+.partners__image-wrap::after {
+  display: block;
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -153,19 +155,19 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-.icon-tv {
+.icon-tv::after {
   background-color: #ff4e50;
   background-image: url(..//img/icons-partners/icon-tv.png);
 }
-.icon-flask {
+.icon-flask::after {
   background-color: #ffa507;
   background-image: url(..//img/icons-partners/icon-flask.png);
 }
-.icon-coffe {
+.icon-coffe::after {
   background-color: #1cd7ad;
   background-image: url(..//img/icons-partners/icon-coffe.png);
 }
-.icon-telegram {
+.icon-telegram::after {
   background-color: #4e73db;
   background-image: url(..//img/icons-partners/icon-telegram.png);
 }
