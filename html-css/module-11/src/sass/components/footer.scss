@@ -1,0 +1,60 @@
+.footer {
+	@include center-flex($type: 'ver');
+	justify-content: space-between;
+	min-height: 60px;
+	border-top: 1px solid #e5e5e5;
+	
+}
+.container {
+}
+.foot-copy {
+}
+.foot-copy__text {
+	display: inline-block;
+	font-family: $font-stack-montserrat;
+	color: $secondary-dark-color;
+	@include font-settings ($size: 14px)
+	&::before {
+		@include pseudo($content: "\00A9")
+		margin-right: 5px;
+	}
+}
+.foot-copy__link {
+	@extend %link;
+	color: $secondary-accent-color;
+	transition: color 0.3s linear;
+	&:hover {
+		color: $primary-accent-color;
+	}
+}
+.foot-form {
+}
+.foot-input {
+	padding-left: 10px;
+	min-width: 150px;
+	min-height: 40px;
+	border: 1px solid #e7e7e7;
+	&::placeholder {
+		font-family: $font-stack-roboto;
+		color: #cccccc;
+	@include font-settings ($size: 15px, $weight: 300);
+	font-style: italic;
+
+	}
+}
+.foot-but {
+	margin: 0;
+	padding: 0;
+	border: none;
+	min-width: 150px;
+	min-height: 40px;
+	font-family: $font-stack-montserrat;
+	color: $primary-white-color;
+	@include font-settings ($size: 14px, $weight: 700);
+	background-color: $tertiary-accent-color;
+	cursor: pointer;
+	transition: background-color 0.3s linear;
+	&:hover {
+		background-color: $primary-accent-color;
+	}
+}

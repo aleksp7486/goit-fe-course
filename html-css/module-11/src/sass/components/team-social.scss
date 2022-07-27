@@ -1,0 +1,40 @@
+.team-social {
+	opacity: 0;
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	background: linear-gradient(0deg, rgba(251, 227, 137, 0.81) 0%, rgba(244, 139, 130, 0.81) 100%);
+	transition: opacity 0.3s linear;
+}
+.team-social__list {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	@extend %list;
+	background-color: $secondary-accent-color;
+}
+.team-social__item:not(:last-child) {
+	margin-right: 1px;
+}
+.team-social__link {
+	@extend %link;
+	@include center-flex($type: 'all');
+	width: 56px;
+	height: 56px;
+	background-color: $primary-accent-color;
+	transition: background-color 0.3s linear;
+	&:hover {
+		background-color: $secondary-accent-color;
+	}
+	&:hover .team__icon {
+		fill: $primary-white-color;	
+	}
+}
+.team__icon {
+	width: 50%;
+	height: 50%;
+	fill: $secondary-accent-color;
+	transition: fill 0.3s linear;
+}

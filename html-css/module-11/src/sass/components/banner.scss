@@ -1,0 +1,45 @@
+.banner {
+	width: 100%;
+	min-height: 1000px;
+	padding: 160px 0 0;
+	@include bg-image($path: (linear-gradient(0deg, rgba(251, 227, 137, 0.81) 0%, rgba(244, 139, 130, 0.81) 100%), url('../images/banner.png'))  )
+	text-align: center;
+	@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+background-image: linear-gradient(0deg, rgba(251, 227, 137, 0.81) 0%, rgba(244, 139, 130, 0.81) 100%), url('../images/banner_back@2x.jpg');
+	}
+}
+.banner__title {
+	max-width: 850px;
+	margin: 0 auto 108px;
+	color: $primary-white-color;
+font-family: $font-stack-montserrat;
+@include font-settings ($size: 150px, $height: 140px, $weight: 700);
+@include text-align-transform;
+&::before {
+	@include pseudo($content: "Creative Template")
+	color: $primary-white-color;
+font-family: $font-stack-kaushan;
+@include font-settings ($size: 72px, $weight: 700);
+text-transform: none;
+margin-bottom: 42px;
+}
+}
+.banner__but {
+	@extend %link;
+	margin: auto;
+	color: $primary-white-color;
+font-family: $font-stack-montserrat;
+@include font-settings ($size: 14px, $height: 40px, $weight: 700);
+@include text-align-transform;
+min-width: 160px;
+min-height: 40px;
+padding: 0 26px;
+border: 3px solid $primary-white-color;
+background: transparent;
+cursor: pointer;
+transition: color 0.3s linear, border-color 0.3s linear;
+&:hover, &:focus {
+	color: $primary-accent-color;
+	border-color: $primary-accent-color;
+}
+}

@@ -1,0 +1,54 @@
+.team {
+	padding-top: 84px;
+	margin-bottom: 80px;
+}
+.team__title {
+	@extend %section-title;
+	&::before {
+		content: "Who we are";
+	}
+}
+.team__desc {
+	margin:0 0 90px;
+	line-height: $main-text-height;
+	text-align: center;
+}
+.team__items {
+}
+.team__list {
+	display: flex;
+	justify-content: space-between;
+	@extend %list;
+}
+.team__item {
+	flex: 0 1 380px;
+	text-align: center;
+}
+.team__item:not(:last-child) {
+	margin-right: 30px;
+}
+.team__image-wrap {
+	margin-bottom: 28px;
+	background-color: $tertiary-accent-color;
+	&:hover .team-social {
+		opacity: 1;
+	}
+	&:hover .team__image {
+		transform: translate(-10px, -10px);
+	}
+}
+.team__image {
+	position: relative;
+	transition: transform 0.3s linear;
+}
+.team__name {
+	margin: 0 0 10px;
+	padding: 0;
+	font-family: $font-stack-montserrat;
+	color: $secondary-dark-color;
+	@include font-settings ($size: 14px)
+}
+.team__text {
+	margin: 0;
+	font-style: italic;
+}

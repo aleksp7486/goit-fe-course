@@ -1,0 +1,10 @@
+.logo {
+	@extend %link;
+color: $primary-white-color;
+font-family: $font-stack-montserrat;
+@include font-settings ($size: 30px, $weight: 700);
+transition: color 0.3s linear;
+&:hover, &:focus {
+	color: $primary-accent-color;
+}
+}

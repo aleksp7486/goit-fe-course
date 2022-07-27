@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-stack-roboto;
+    color: $primary-dark-color;
+@include font-settings($main-text-size)
+
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,38 @@
+%list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+%link {
+	display: inline-block;
+	text-decoration: none;
+}
+
+%section-title {
+	position: relative;
+	margin: 0;
+	font-family: $font-stack-montserrat;
+	color: $secondary-dark-color;
+	@include font-settings(30px, $weight: 700);
+	@include text-align-transform;
+	margin-bottom: 92px;
+	&::before {
+		@include pseudo($display: block)
+		color: $secondary-dark-color;
+		font-family: $font-stack-kaushan;
+		@include font-settings ($size: 24px);
+		text-transform: none;
+		margin-bottom: 14px;
+	}
+	&::after {
+		@include pseudo($display: block, $content: "");
+		position: absolute;
+		bottom: -34px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 60px;
+		height: 3px;
+		background-color: $secondary-accent-color;
+		
+	}
+}

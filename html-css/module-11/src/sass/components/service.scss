@@ -1,0 +1,47 @@
+.service {
+	padding-top: 44px;
+}
+.service__title {
+	@extend %section-title;
+	&::before {
+		content: "We work with";
+	}
+}
+.service__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	@extend %list
+}
+.service__item {
+flex: 0 1 380px;
+&:not(:nth-last-child(-n+3)) {
+	margin-bottom: 94px;
+}
+}
+.service__body {
+	position: relative;
+	padding-left: 80px;
+}
+.service__icon {
+	position: absolute;
+	top: 0;
+	left: 40px;
+	transform: translateX(-50%);
+	fill: $tertiary-accent-color;
+}
+.service__body-title {
+	margin: 0 0 12px;
+	font-family: $font-stack-montserrat;
+	color: $secondary-dark-color;
+	@include font-settings(14px);
+	text-transform: uppercase;
+}
+.service__text {
+	margin: 0;
+	line-height: $main-text-height;
+}
+
+
+
+
