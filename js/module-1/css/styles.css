@@ -5,18 +5,19 @@ body {
   background-color: teal;
 }
 
-h1 {
+.title {
   position: absolute;
   top: 12.5rem;
   margin: 0;
   color: white;
   font-family: 'JetBrains Mono';
   font-size: 2.5rem;
+  font-weight: 700;
   text-align: center;
-  animation: title-anim 1s linear;
+  animation: title-anim 1.2s linear;
 }
 
-p {
+.text {
   position: absolute;
   top: 18.75rem;
   margin: 0;
@@ -24,19 +25,18 @@ p {
   font-family: 'JetBrains Mono';
   font-size: 1.25rem;
   text-align: center;
-  animation: text-anim 1s linear;
+  animation: text-anim 1.2s linear;
 }
 
 @keyframes title-anim {
   0% {
-    transform: translatey(-6.25rem);
-    color: green;
+    transform: translatey(-500px);
+    color: teal;
   }
   50% {
     transform: translatey(0rem);
     transform: rotate(360deg);
     font-size: 3.75rem;
-    color: yellowgreen;
   }
   100% {
     transform: rotate(0);
@@ -47,13 +47,12 @@ p {
 @keyframes text-anim {
   0% {
     transform: translatex(-62.5rem);
-    color: green;
+    color: teal;
   }
   50% {
     transform: translatey(0rem);
     transform: scale(1.2);
     font-size: 1.875rem;
-    color: yellowgreen;
   }
   100% {
     transform: scale(1);
