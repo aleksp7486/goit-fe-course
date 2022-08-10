@@ -30,7 +30,7 @@ body {
 
 @keyframes title-anim {
   0% {
-    transform: translatey(-500px);
+    transform: translatey(-31.25rem);
     color: teal;
   }
   50% {
