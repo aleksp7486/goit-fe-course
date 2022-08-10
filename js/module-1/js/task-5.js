@@ -10,3 +10,49 @@ console.log('Task-5');
 Австралия - 170 кредитов
 Индия - 80 кредитов
 Ямайка - 120 кредитов */
+
+const china = 'Китай';
+const chili = 'Чили';
+const australia = 'Австралия';
+const india = 'Индия';
+const jamaica = 'Ямайка';
+const chinaPrice = 100;
+const chiliPrice = 250;
+const australiaPrice = 170;
+const indiaPrice = 80;
+const jamaicaPrice = 120;
+let message;
+const country = prompt('Укажите страну:');
+function showMessage(country, price) {
+  message = `Доставка в ${country} будет стоить ${price} кредитов`;
+}
+if (country === null) {
+  message = 'Отменено пользователем';
+} else if (
+  country.toLowerCase() === china.toLowerCase() ||
+  country.toLowerCase() === chili.toLowerCase() ||
+  country.toLowerCase() === australia.toLowerCase() ||
+  country.toLowerCase() === india.toLowerCase() ||
+  country.toLowerCase() === jamaica.toLowerCase()
+) {
+  switch (country.toLowerCase()) {
+    case china.toLowerCase():
+      showMessage(china, chinaPrice);
+      break;
+    case chili.toLowerCase():
+      showMessage(chili, chiliPrice);
+      break;
+    case australia.toLowerCase():
+      showMessage(australia, australiaPrice);
+      break;
+    case india.toLowerCase():
+      showMessage(india, indiaPrice);
+      break;
+    case jamaica.toLowerCase():
+      showMessage(jamaica, jamaicaPrice);
+      break;
+  }
+} else {
+  message = 'В вашей стране доставка не доступна';
+}
+alert(message);
