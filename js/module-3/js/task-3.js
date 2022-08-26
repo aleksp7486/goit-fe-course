@@ -9,13 +9,13 @@ console.log('Task-3');
   let max = 0;
   let name;
   for (const entry of employeesEntries) {
-    const entryVar = {
-      key: entry[0],
-      value: entry[1],
+    const EntryVar = {
+      KEY: entry[0],
+      VALUE: entry[1],
     };
-    if (max < entryVar.value) {
-      max = entryVar.value;
-      name = entryVar.key;
+    if (max < EntryVar.VALUE) {
+      max = EntryVar.VALUE;
+      name = EntryVar.KEY;
     }
   }
   return name;
