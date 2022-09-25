@@ -13,7 +13,8 @@ nameInput.addEventListener('input', displayName);
 function displayName(e) {
   const input = e.currentTarget.value;
   if (!input.length) {
-    return (nameOutput.textContent = 'Anonymous');
+    nameOutput.textContent = 'Anonymous';
+    return;
   }
-  return (nameOutput.textContent = input);
+  nameOutput.textContent = input;
 }
