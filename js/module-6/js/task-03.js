@@ -27,8 +27,15 @@ const galleryList = document.querySelector('.gallery');
 
 galleryList.classList.add('container');
 
-const items = images
-  .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`)
-  .join('');
+function convertGalleryArr(arr) {
+  return arr
+    .map(
+      ({ url, alt }) =>
+        `<li class = "gallery__item"><img src="${url}" alt="${alt}"></li>`,
+    )
+    .join('');
+}
+
+const items = convertGalleryArr(images);
 
 galleryList.insertAdjacentHTML('afterbegin', items);
