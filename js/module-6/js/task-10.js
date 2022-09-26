@@ -24,12 +24,18 @@ function createClick() {
   if (boxes.innerHTML) {
     return;
   }
+  if (controlsInput.value > 100 || controlsInput.value < 1) {
+    alert('Введите число от 1 до 100');
+    controlsInput.value = 0;
+    return;
+  }
   const inputValue = controlsInput.value;
   boxes.insertAdjacentHTML('beforeend', createBoxes(inputValue));
 }
 
 function destroyClick() {
   boxes.innerHTML = '';
+  controlsInput.value = 0;
 }
 
 function createBoxes(amount) {
