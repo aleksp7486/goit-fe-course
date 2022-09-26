@@ -10,16 +10,25 @@
 const input = document.querySelector('#validation-input');
 
 input.addEventListener('blur', validCheck);
-input.addEventListener('focus', () =>
-  input.classList.remove('valid', 'invalid'),
-);
+input.addEventListener('focus', removeClass);
+
+function removeClass() {
+  if (input.classList.contains('valid')) {
+    input.classList.remove('valid');
+  }
+  if (input.classList.contains('invalid')) {
+    input.classList.remove('invalid');
+  }
+}
 
 function validCheck(e) {
   const elem = e.currentTarget;
-  if (!elem.value.length) {
+  const elemDataLength = Number(elem.dataset.length);
+  const elemCurrentLength = elem.value.length;
+  if (!elemCurrentLength) {
     return;
   }
-  if (Number(elem.dataset.length) === elem.value.length) {
+  if (elemDataLength === elemCurrentLength) {
     elem.classList.add('valid');
     return;
   }
