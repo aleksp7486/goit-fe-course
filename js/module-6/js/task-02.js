@@ -30,13 +30,13 @@ function createIngredientsItems(arr) {
     const item = document.createElement('li');
     const title = document.createElement('p');
     item.classList.add('item');
-    item.prepend(title);
+    item.append(title);
     title.textContent = elem;
     return item;
   });
 }
 
-ingredientsList.prepend(...ingredientsItems);
+ingredientsList.append(...ingredientsItems);
 
 // Или так
 
