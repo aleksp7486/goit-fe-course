@@ -39,10 +39,11 @@ class Car {
     return this._price;
   }
   set price(value) {
-    if (value > 0) {
-      this._price = value;
+    if (value < 0) {
+      console.log('Введено не корректное значение');
+      return;
     }
-    return;
+    this._price = value;
   }
   /*
    * Добавь код для того чтобы завести автомобиль
