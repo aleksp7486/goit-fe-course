@@ -39,7 +39,10 @@ class Car {
     return this._price;
   }
   set price(value) {
-    this._price = value;
+    if (value > 0) {
+      this._price = value;
+    }
+    return;
   }
   /*
    * Добавь код для того чтобы завести автомобиль
@@ -55,6 +58,7 @@ class Car {
    */
   turnOff() {
     this.isOn = false;
+    this.speed = 0;
   }
   /*
    * Добавялет к свойству speed полученное значение,
@@ -62,7 +66,7 @@ class Car {
    * не больше чем значение свойства maxSpeed
    */
   accelerate(value) {
-    if (value <= this.maxSpeed) {
+    if (value <= this.maxSpeed && this.isOn) {
       this.speed = value;
     }
   }
