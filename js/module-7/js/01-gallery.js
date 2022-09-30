@@ -1,3 +1,4 @@
+'Use strict';
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
@@ -20,7 +21,6 @@ function createElements(arr) {
     galleryImage.setAttribute('src', preview);
     galleryImage.setAttribute('data-source', original);
     galleryImage.setAttribute('alt', description);
-    galleryImage.style.maxWidth = '800px';
     galleryLink.append(galleryImage);
     return galleryItem;
   });
